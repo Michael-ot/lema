@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Loader = () => {
+const Loader: React.FC = () => {
     return (
         <div className="py-16 text-center">
             <div className="lds-ellipsis text-purple-300">
