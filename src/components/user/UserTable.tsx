@@ -36,7 +36,7 @@ const UserTable: React.FC = () => {
     return (
         <>
         <div className="w-full overflow-x-auto">
-          <div className="w-full mx-auto border border-gray-200 rounded-lg overflow-hidden">
+          <div className="w-full mx-auto border border-gray-200 rounded-lg overflow-scroll">
             <table className="w-full text-sm text-left">
               <UserTableHeader toggleSortOrder={toggleSortOrder} sortOrder={sortOrder} />
               {isLoading ? (
