@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://owiup-lema.owiup.com/api";
+const BASE_URL = "https://owiup-lema.owiup.com/api";
 
 
 const apiClient = axios.create({
