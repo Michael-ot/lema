@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { User } from '../../features/user/types';
-import { formatAddress } from '../../features/user/utils';
 
 interface UserTableBodyProps {
     users: User[];
@@ -31,9 +30,8 @@ const UserTableBody: React.FC<UserTableBodyProps> = ({users}) => {
             <td
               className="px-4 sm:px-6 py-3 sm:py-4 md:py-[26px] text-[13px] sm:text-[14px] text-gray-600 font-normal truncate"
               style={{ maxWidth: "392px" }}
-              title={formatAddress(user.address)}
             >
-              {formatAddress(user.address)}
+              <p className='truncate'>{user.address?.street} {user.address?.state} {user.address?.city} {user.address?.zipcode}</p>
             </td>
           </tr>
         ))}
