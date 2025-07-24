@@ -41,7 +41,7 @@ const Pagination: React.FC<PaginationProps> = ({currentPage,totalPages,onPageCha
               <button
                 key={page}
                 onClick={() => onPageChange(page)}
-                className={`px-3 py-2 rounded-md transition ${
+                className={`w-[40px] h-[40px] hidden lg:flex items-center justify-center rounded-md transition ${
                   isActive
                     ? "bg-indigo-100 text-[#7F56D9] font-semibold"
                     : "text-gray-500 hover:bg-indigo-50 hover:text-[#7F56D9]"
